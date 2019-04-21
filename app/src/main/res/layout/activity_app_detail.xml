@@ -47,6 +47,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="#ffffff"
+            android:layout_marginTop="10dp"
             >
 
             <TextView
@@ -84,42 +85,110 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+
                 >
                 
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_height="80dp"
+                    android:layout_height="70dp"
                     android:layout_weight="1"
                     android:src="@mipmap/ic_launcher"
                     android:scaleType="centerCrop"
-                    android:padding="10dp"
+                    android:padding="20dp"
+                    android:layout_gravity="center"
 
                     />
 
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_height="40dp"
+                    android:layout_height="70dp"
                     android:layout_weight="1"
                     android:src="@mipmap/ic_launcher"
+                    android:scaleType="centerCrop"
+                    android:padding="20dp"
+                    android:layout_gravity="center"
+
                     />
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_height="40dp"
+                    android:layout_height="70dp"
                     android:layout_weight="1"
                     android:src="@mipmap/ic_launcher"
+                    android:scaleType="centerCrop"
+                    android:padding="20dp"
+                    android:layout_gravity="center"
+
                     />
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_height="40dp"
+                    android:layout_height="70dp"
                     android:layout_weight="1"
                     android:src="@mipmap/ic_launcher"
+                    android:scaleType="centerCrop"
+                    android:padding="20dp"
+                    android:layout_gravity="center"
+
                     />
 
 
             </LinearLayout>
 
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            >
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="풀옵션"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="엘레베이터"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"
+                android:padding="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="빌트인"
+                android:textSize="20dp"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="문자상담"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="전화상담"
+                />
+
+        </LinearLayout>
 
     </LinearLayout>
 
