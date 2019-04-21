@@ -9,12 +9,13 @@
         android:layout_height="match_parent"
         tools:context=".AppDetail"
         android:orientation="vertical"
+        android:background="#ffffff"
         >
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:src="@mipmap/ic_launcher"
+            android:src="@drawable/dabangim"
             android:scaleType="centerCrop"
             />
 
@@ -23,10 +24,11 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
+            android:background="#3c64bf"
             >
 
             <TextView
+                android:layout_marginLeft="10dp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="방주인에게 매물정보와 거래상태를 확인받은 매물입니다."
@@ -34,11 +36,13 @@
                 android:layout_gravity="center"
                 android:textSize="15sp"
                 android:padding="2dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
                 />
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@mipmap/ic_launcher"
+                android:src="@drawable/question"
                 />
         </LinearLayout>
 
@@ -57,7 +61,6 @@
                 android:layout_height="wrap_content"
                 android:text="확인매물 19.04.03"
                 android:textSize="16sp"
-
                 />
             <TextView
                 android:layout_marginTop="10dp"
@@ -68,6 +71,7 @@
                 android:textStyle="bold"
                 android:textColor="#000000"
                 android:textSize="25sp"
+                android:id="@+id/paymentAndMTxt"
                 />
             <TextView
                 android:layout_marginTop="10dp"
@@ -76,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:text="3,6호선 불광역 1분,도배, 청소완료 관리잘 된 원룸"
                 android:textSize="16sp"
-
+                android:id="@+id/optionContextTxt"
                 />
 
         </LinearLayout>
@@ -87,6 +91,7 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="20dp"
+                android:background="#ffffff"
 
                 >
                 
@@ -94,7 +99,7 @@
                     android:layout_width="0dp"
                     android:layout_height="70dp"
                     android:layout_weight="1"
-                    android:src="@mipmap/ic_launcher"
+                    android:src="@drawable/oneroom"
                     android:scaleType="centerCrop"
                     android:padding="20dp"
                     android:layout_gravity="center"
@@ -105,7 +110,7 @@
                     android:layout_width="0dp"
                     android:layout_height="70dp"
                     android:layout_weight="1"
-                    android:src="@mipmap/ic_launcher"
+                    android:src="@drawable/oneroomo"
                     android:scaleType="centerCrop"
                     android:padding="20dp"
                     android:layout_gravity="center"
@@ -115,7 +120,7 @@
                     android:layout_width="0dp"
                     android:layout_height="70dp"
                     android:layout_weight="1"
-                    android:src="@mipmap/ic_launcher"
+                    android:src="@drawable/oneroomq"
                     android:scaleType="centerCrop"
                     android:padding="20dp"
                     android:layout_gravity="center"
@@ -125,7 +130,7 @@
                     android:layout_width="0dp"
                     android:layout_height="70dp"
                     android:layout_weight="1"
-                    android:src="@mipmap/ic_launcher"
+                    android:src="@drawable/oneroome"
                     android:scaleType="centerCrop"
                     android:padding="20dp"
                     android:layout_gravity="center"
@@ -140,8 +145,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="40dp"
             android:gravity="center"
+            android:background="#ffffff"
             >
 
             <TextView
@@ -151,6 +157,8 @@
                 android:textSize="20dp"
                 android:padding="5dp"
                 android:layout_marginRight="5dp"
+                android:background="#f3f3f3"
+
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -159,6 +167,7 @@
                 android:textSize="20dp"
                 android:layout_marginRight="5dp"
                 android:padding="5dp"
+                android:background="#f3f3f3"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -166,6 +175,7 @@
                 android:text="빌트인"
                 android:textSize="20dp"
                 android:padding="5dp"
+                android:background="#f3f3f3"
                 />
         </LinearLayout>
 
@@ -173,6 +183,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
+            android:layout_marginBottom="40dp"
             >
 
             <Button
@@ -180,12 +191,19 @@
                 android:layout_height="match_parent"
                 android:text="문자상담"
                 android:layout_weight="1"
+                android:background="#4383ff"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:layout_marginRight="1dp"
                 />
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="전화상담"
+                android:background="#4383ff"
+                android:textSize="25sp"
+                android:textColor="#ffffff"
                 />
 
         </LinearLayout>
