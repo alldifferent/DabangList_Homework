@@ -64,7 +64,29 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        
+
+        act.dabangList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+
+                dabangList.remove(position);
+                dabangAdapter.notifyDataSetChanged();
+
+                return true;
+            }
+        });
+
+        act.addBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                dabangList.add(new Dabang(400,43, 3, "종로구", "원룸","풀옵션"));
+                dabangAdapter.notifyDataSetChanged();
+                act.dabangList.smoothScrollToPosition(dabangList.size()-1);
+
+            }
+        });
+
     }
     
 }

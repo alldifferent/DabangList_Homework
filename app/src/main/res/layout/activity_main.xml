@@ -21,6 +21,15 @@
             android:textSize="20sp"
             android:textColor="#000000"
             />
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="방 추가하기"
+            android:background="#4383ff"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
